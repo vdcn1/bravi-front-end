@@ -14,6 +14,6 @@ export class StorageService {
   }
 
   setData(key: string, data: any){
-    localStorage.setItem(key, JSON.stringify(data));
+    return localStorage.setItem(key, JSON.stringify(data));
   }
 }
